@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Speed Typer - Test Your Typing Skills</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <header>
+          <h1>Speed Typer</h1>
+          <p class="tagline">How fast can you type?</p>
+        </header>
+
+        <!-- Game settings and instructions -->
+        <div class="settings-box" id="settings">
+          <h2>Game Settings</h2>
+          <div class="difficulty-selector">
+            <p>Select Difficulty:</p>
+            <div class="buttons">
+              <button class="difficulty-btn active" data-time="60">
+                Easy (60s)
+              </button>
+              <button class="difficulty-btn" data-time="30">
+                Medium (30s)
+              </button>
+              <button class="difficulty-btn" data-time="15">Hard (15s)</button>
+            </div>
+          </div>
+          <div class="instructions">
+            <h3><i class="fas fa-info-circle"></i> How to Play</h3>
+            <p>
+              Type the text as quickly and accurately as possible. Your WPM
+              (Words Per Minute) and accuracy will be calculated.
+            </p>
+          </div>
+          <button id="start-game" class="primary-btn">Start Typing Test</button>
+        </div>
+
+        <!-- Game area -->
+        <div class="game-box hide" id="game-area">
+          <input type="text" class="input-field" />
+          <div class="content-box">
+            <div class="typing-text">
+              <p></p>
+            </div>
+            <div class="content">
+              <ul class="result-details">
+                <li class="time">
+                  <p>Time Left:</p>
+                  <span><b>60</b>s</span>
+                </li>
+                <li class="mistakes">
+                  <p>Mistakes:</p>
+                  <span>0</span>
+                </li>
+                <li class="wpm">
+                  <p>WPM:</p>
+                  <span>0</span>
+                </li>
+                <li class="cpm">
+                  <p>CPM:</p>
+                  <span>0</span>
+                </li>
+              </ul>
+              <button id="retry-btn" class="primary-btn">Try Again</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Results screen -->
+        <div class="results-box hide" id="results">
+          <h2>Your Results</h2>
+          <div class="result-stats">
+            <div class="stat">
+              <i class="fas fa-tachometer-alt"></i>
+              <p>Speed</p>
+              <span id="final-wpm">0 WPM</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-check-circle"></i>
+              <p>Accuracy</p>
+              <span id="accuracy">0%</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-keyboard"></i>
+              <p>Characters</p>
+              <span id="characters">0</span>
+            </div>
+            <div class="stat">
+              <i class="fas fa-times-circle"></i>
+              <p>Errors</p>
+              <span id="error-count">0</span>
+            </div>
+          </div>
+          <div class="quote">
+            <p id="motivation-quote">
+              Keep practicing to improve your typing speed!
+            </p>
+          </div>
+          <div class="buttons">
+            <button id="try-again" class="primary-btn">Try Again</button>
+            <button id="new-test" class="secondary-btn">New Test</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Created with <i class="fas fa-heart"></i> by TheRealSaiTama |
+        <i class="fas fa-keyboard"></i> Test your typing skills daily!
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
