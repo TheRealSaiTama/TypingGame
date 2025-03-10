@@ -108,13 +108,13 @@ The code is organized into focused functions with clear responsibilities, making
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/speed-typer.git
+   git clone https://github.com/TheRealSaiTama/TypingGame.git
    ```
 
 2. Open the project folder:
 
    ```bash
-   cd speed-typer
+   cd TypingGame
    ```
 
 3. Open `index.html` in your browser or use a local development server.
